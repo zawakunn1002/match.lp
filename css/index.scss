@@ -18,7 +18,8 @@ body {
   font-family: 'Yu Mincho';
 }
 
-header{
+.main{
+    display: block;
     height: 100px;
     width: 100%;
     position: fixed;
@@ -31,7 +32,7 @@ header{
         margin-left: 4%;
         float: left;
     }
-    nav{
+    #scroll{
         float: right;
         line-height: 100px;
         margin-right: 10%;
@@ -39,6 +40,31 @@ header{
             li{
                 float: left;
                 margin: 0 30px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.responsive{
+    display: none;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+	top: 0;
+    z-index: 10;
+    background-color:white ;
+    img{
+        width: $img-width;
+        height: $img-height;
+        display: block;
+        margin: 0 auto;
+    }
+    #scroll{
+        ul{
+            li{
+                text-align: center;
+                margin: 40px 0;
                 cursor: pointer;
             }
         }
@@ -125,6 +151,15 @@ header{
     }
 }
 
+#top-btn{
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+  img{
+    width: 50px;
+  }
+}
+
 footer{
     img{
         width: $img-width;
@@ -134,22 +169,12 @@ footer{
     }
 }
 
-.toTop{
-    position: fixed;
-    right: 0;
-    bottom:0;
-    height: 3rem;
-    line-height: 3rem;
-    color: white;
-    text-align: center;
-    width: 100px;
-    cursor: pointer;
-    transition: all .3s ease;
-    background: black;
-  }
-  
-  .toTop.v-enter, .toTop.v-leave {
-    height: 0;
-    padding: 0 10px;
-    opacity: 0;
-  }
+@media screen and (max-width:425px) {
+    .main{
+        display: none;
+    }
+    .responsive{
+        display: block;
+    }
+}
+
