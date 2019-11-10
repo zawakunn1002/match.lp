@@ -1,0 +1,155 @@
+$main-color: rgb(0, 210, 255);
+$img-width: 120px;
+$img-height: 100px; 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+  
+body {
+  font-family: 'Yu Mincho';
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+	top: 0;
+    z-index: 10;
+    background-color:white ;
+    img{
+        width: $img-width;
+        height: $img-height;
+        margin-left: 4%;
+        float: left;
+    }
+    nav{
+        float: right;
+        line-height: 100px;
+        margin-right: 10%;
+        ul{
+            li{
+                float: left;
+                margin: 0 30px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.greeting{
+    width: 100%;
+    background-color: lighten($main-color, 40%);
+    padding: 30px;
+    margin-top: 100px;
+    h1{
+        text-align: center;
+    }
+    .greeting-message{
+        width: 70%;
+        background-color: lighten($main-color, 35%);
+        margin: 20px auto;
+        border-bottom: solid 6px #3f87ce;
+        box-shadow: 0 3px 6px rgba(250, 250, 250, 0.1);
+        border-radius: 15px;
+
+        .main-message{
+            margin: 10px;
+        }
+        .ceo{
+            text-align: right;
+            margin-right: 20px;
+        }
+    }
+}
+.business-description{
+    width: 100%;
+    padding: 30px 0;
+
+    h1{
+        text-align: center;
+    }
+    .example{
+        width: 50%;
+        float: left;
+
+        p{
+            padding: 10px 0 10px 25px;
+        }
+    }
+    .figure{
+        width: 50%;
+        float: left;
+        padding: 5px 30px;
+
+        .a{
+            img{
+                width: $img-width;
+                height: $img-height;
+            }
+        }
+    }
+}
+
+.contact{
+    width: 100%;
+    padding: 30px;
+    background-color: lighten($main-color, 40%);
+    h1{
+        text-align: center;
+    }
+    p{
+        font-size: 25px;
+        text-align: center;
+        padding: 25px;
+    }
+    .ggmap {
+        position: relative;
+        width: 100%;
+        padding-top: 75%; /* = height ÷ width × 100 */
+    
+       iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+}
+
+footer{
+    img{
+        width: $img-width;
+        height: $img-height;
+        float: right;
+        margin-right: 2%;
+    }
+}
+
+.toTop{
+    position: fixed;
+    right: 0;
+    bottom:0;
+    height: 3rem;
+    line-height: 3rem;
+    color: white;
+    text-align: center;
+    width: 100px;
+    cursor: pointer;
+    transition: all .3s ease;
+    background: black;
+  }
+  
+  .toTop.v-enter, .toTop.v-leave {
+    height: 0;
+    padding: 0 10px;
+    opacity: 0;
+  }

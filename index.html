@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>MATCH</title>
+</head>
+<body id="app">
+    <header>
+        <img src="img/Machロゴ.PNG">
+        <nav id="b">
+            <ul>
+                <li><a href="#greeting">ご挨拶</a></li>
+                <li><a href="#business-description">業務内容</a></li>
+                <li><a href="#contact">ご連絡先</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="greeting" id ="greeting">
+        <h1>ご挨拶</h1>
+        <div class="greeting-message">
+            <p class="main-message">
+             株式会社MATCHは、広島県尾道市に本社があります。グループ会社は、ローカル経済誌を57年発行し、地域住民と共に歩んでまいりました。<br>
+             取材を通して深刻な人手不足を耳にするようになって6，7年。何かお手伝いできることはないかと模索し、5年前から広島県や尾道市、福山市の就職促進事業を受託し、実績を積んでまいりました。
+             そして、平成30年に厚生労働省有料人材紹介業の許認可（厚生労働省有料人材紹介業事業34-ユー　300418）を取得し、令和元年から人材紹介のサービスを本格的に開始しました。<br>
+             日本はものづくり大国です。海外の技術者は日本のものづくりに憧れ、日本企業で活躍したい高度人材が多数います。
+             こうした人材をMATCHが発掘し、貴社で活躍できる人材をご紹介します。
+             また、採用された後も、同じ国のスタッフがサポートし、人材のさまざまなHELPにお答えします。<br>
+             まずは悩まずにご相談ください。
+            </p>
+            <p class="ceo">
+                代表取締役　二宮　恵
+            </p>
+        </div>
+    </div>
+    <div class="business-description clearfix" id="business-description">
+        <h1>業務内容</h1>
+        <div class="example">
+            <p>1、有料人材紹介（日本・ベトナム・インドネシア・ウズベキスタン）</p>
+            <p>2、特定技能人材紹介（ベトナム・インドネシア・ウズベキスタン）</p>
+            <p>3、人材教育・外国文化相互理解（日本語マナー研修・日本人向け外国文化研修）</p>
+            <p>4、企業説明会・面接会・インターンシップ実施に関する業務</p>
+            <p>5、海外進出に関するコーディネート（翻訳・通訳・現地調査）</p>
+        </div>
+        <div class="figure">
+            <div class="a">
+                <img src="img/Machロゴ.PNG">
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <h1>ご連絡先</h1>
+        <p>電話番号<br><a href="tel:0848222670">0848-22-2670</a></p>
+        <p>メールアドレス<br><a href ="mailto: match.hiroshima@gmail.com">match.hiroshima@gmail.com</a></p>
+        <p>住所<br>広島県尾道市新浜1-9-361</p>
+        <div class="ggmap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2653.215016070832!2d133.1809747423089!3d34.401033505793166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3551002494c36a7d%3A0x79feb503501a958d!2z44CSNzIyLTAwMTQg5bqD5bO255yM5bC-6YGT5biC5paw5rWc77yR5LiB55uu77yZ!5e0!3m2!1sja!2sjp!4v1573291610570!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>    
+    </div>
+    <footer>
+        <img src="img/Machロゴ.PNG">
+    </footer>
+
+    <div class="toTop" v-if="position > 500" v-on="click: toTop()" v-transition>
+        Jump To Top
+    </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/0.11.5/vue.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

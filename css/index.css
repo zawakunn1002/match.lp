@@ -1,0 +1,164 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  font-family: 'Yu Mincho';
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+}
+
+header img {
+  width: 120px;
+  height: 100px;
+  margin-left: 4%;
+  float: left;
+}
+
+header nav {
+  float: right;
+  line-height: 100px;
+  margin-right: 10%;
+}
+
+header nav ul li {
+  float: left;
+  margin: 0 30px;
+  cursor: pointer;
+}
+
+.greeting {
+  width: 100%;
+  background-color: #ccf6ff;
+  padding: 30px;
+  margin-top: 100px;
+}
+
+.greeting h1 {
+  text-align: center;
+}
+
+.greeting .greeting-message {
+  width: 70%;
+  background-color: #b3f2ff;
+  margin: 20px auto;
+  border-bottom: solid 6px #3f87ce;
+  -webkit-box-shadow: 0 3px 6px rgba(250, 250, 250, 0.1);
+          box-shadow: 0 3px 6px rgba(250, 250, 250, 0.1);
+  border-radius: 15px;
+}
+
+.greeting .greeting-message .main-message {
+  margin: 10px;
+}
+
+.greeting .greeting-message .ceo {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.business-description {
+  width: 100%;
+  padding: 30px 0;
+}
+
+.business-description h1 {
+  text-align: center;
+}
+
+.business-description .example {
+  width: 50%;
+  float: left;
+}
+
+.business-description .example p {
+  padding: 10px 0 10px 25px;
+}
+
+.business-description .figure {
+  width: 50%;
+  float: left;
+  padding: 5px 30px;
+}
+
+.business-description .figure .a img {
+  width: 120px;
+  height: 100px;
+}
+
+.contact {
+  width: 100%;
+  padding: 30px;
+  background-color: #ccf6ff;
+}
+
+.contact h1 {
+  text-align: center;
+}
+
+.contact p {
+  font-size: 25px;
+  text-align: center;
+  padding: 25px;
+}
+
+.contact .ggmap {
+  position: relative;
+  width: 100%;
+  padding-top: 75%;
+  /* = height ÷ width × 100 */
+}
+
+.contact .ggmap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+footer img {
+  width: 120px;
+  height: 100px;
+  float: right;
+  margin-right: 2%;
+}
+
+.toTop {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 3rem;
+  line-height: 3rem;
+  color: white;
+  text-align: center;
+  width: 100px;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  background: black;
+}
+
+.toTop.v-enter, .toTop.v-leave {
+  height: 0;
+  padding: 0 10px;
+  opacity: 0;
+}
+/*# sourceMappingURL=index.css.map */
