@@ -218,6 +218,9 @@ footer img {
     display: block;
     float: none;
   }
+  .business-description .example p {
+    padding: 14px 5px;
+  }
   .business-description .figure {
     width: 100%;
     display: block;
