@@ -1,4 +1,12 @@
 $(function(){
+
+    $('.slider').slick({
+        accessibility: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        speed: 1500,
+        pauseOnHover: false
+    });
     
     $('#scroll a').click(function(){
         var id =$(this).attr('href');
