@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -114,11 +113,12 @@ body {
 
 .business-description {
   width: 100%;
-  padding: 30px 0;
+  padding: 5px 0;
 }
 
 .business-description h1 {
   text-align: center;
+  margin: 10px 0;
 }
 
 .business-description .example {
@@ -127,18 +127,17 @@ body {
 }
 
 .business-description .example p {
-  padding: 10px 0 10px 25px;
+  padding: 14px 0 14px 25px;
 }
 
 .business-description .figure {
   width: 50%;
   float: left;
-  padding: 5px 30px;
 }
 
-.business-description .figure .a img {
-  width: 120px;
-  height: 100px;
+.business-description .figure img {
+  width: 100%;
+  height: 280px;
 }
 
 .contact {
@@ -149,27 +148,36 @@ body {
 
 .contact h1 {
   text-align: center;
+  margin: 10px 0;
 }
 
-.contact p {
-  font-size: 25px;
-  text-align: center;
-  padding: 25px;
+.contact .outline {
+  width: 100%;
+}
+
+.contact .outline table {
+  margin: 0 auto;
+}
+
+.contact .outline table th {
+  padding: 5px 20px;
 }
 
 .contact .ggmap {
   position: relative;
-  width: 100%;
-  padding-top: 75%;
-  /* = height ÷ width × 100 */
+  width: 90%;
+  padding-bottom: 35%;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
 }
 
 .contact .ggmap iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
   height: 100%;
+  width: 100%;
 }
 
 #top-btn {
@@ -197,13 +205,27 @@ footer img {
     display: block;
   }
   .greeting .greeting-message {
-    width: 92%;
+    width: 100%;
   }
   .slider .img1 {
     height: 600px;
   }
   .slider .img2 {
     height: 600px;
+  }
+  .business-description .example {
+    width: 100%;
+    display: block;
+    float: none;
+  }
+  .business-description .figure {
+    width: 100%;
+    display: block;
+    float: none;
+  }
+  .contact .ggmap {
+    width: 100%;
+    padding-bottom: 75%;
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -4,8 +4,9 @@ $(function(){
         accessibility: true,
         autoplay: true,
         autoplaySpeed: 3000,
-        speed: 1500,
-        pauseOnHover: false
+        speed: 3000,
+        pauseOnHover: false,
+        pauseOnDotsHover: false,
     });
     
     $('#scroll a').click(function(){
