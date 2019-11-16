@@ -4,9 +4,11 @@ $(function(){
         accessibility: true,
         autoplay: true,
         autoplaySpeed: 3000,
-        speed: 3000,
         pauseOnHover: false,
         pauseOnDotsHover: false,
+        fade: true,
+        speed: 800,
+        cssEase: 'cubic-bezier(.645, .045, .355, 1)'
     });
     
     $('#scroll a').click(function(){
