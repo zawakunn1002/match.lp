@@ -21,7 +21,7 @@ $(function(){
             'scrollTop':position
             }, 1500)
         }else{
-            var position = $(id).offset().top - 100;
+            var position = $(id).offset().top - 60;
             $('html,body').animate({
             'scrollTop':position
             }, 1500)
