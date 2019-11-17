@@ -22,9 +22,6 @@ body {
     display: block;
     height: 100px;
     width: 100%;
-    position: fixed;
-	top: 0;
-    z-index: 10;
     background-color:white ;
     img{
         width: $img-width;
@@ -73,7 +70,6 @@ body {
 
 .slider{
     width: 100%;
-    margin-top: 100px;
 
     .img1{
         width: 100%;
@@ -110,7 +106,7 @@ body {
 }
 .business-description{
     width: 100%;
-    padding: 5px 0;
+    padding-top: 5px;
 
     h1{
         text-align: center;
@@ -132,27 +128,16 @@ body {
         float: left;
         img{
             width: 100%;
-            height: auto;
+            height: 400px;
         }
     }
     .figure2{
         width: 50%;
-        height: auto;
         float: left;
         img{
-            display: block;
-            margin: 140px auto 0 auto;
-            width: 92%;
-            height: auto;
-        }
-        p{
-            text-align: center;
-            padding: 20px 0 10px 0;
-            font-size: 16px;
-            font-weight: 700;
-            a{
-                text-decoration: none;
-            }
+            width: 100%;
+            height: 400px;
+            cursor: pointer;
         }
     }
 }
@@ -219,6 +204,10 @@ footer{
         display: block;
     }
 
+    .slider{
+        margin-top: 100px;
+    }
+
     .greeting{
         .greeting-message{
             width: 100%;
@@ -244,15 +233,16 @@ footer{
         }
         .figure1{
             width: 100%;
+            height: auto;
             display: block;
             float: none;
         }
         .figure2{
             width: 100%;
+            height: auto;
             display: block;
             float: none;
             img{
-                margin: 20px auto;
             }
         }
     }

@@ -12,11 +12,20 @@ $(function(){
     });
     
     $('#scroll a').click(function(){
+        var screen = $(window).width();
+        var width = 426;
         var id =$(this).attr('href');
-        var position = $(id).offset().top - 100;
-        $('html,body').animate({
-          'scrollTop':position
-        }, 1500)
+        if(screen >= width){
+            var position = $(id).offset().top;
+            $('html,body').animate({
+            'scrollTop':position
+            }, 1500)
+        }else{
+            var position = $(id).offset().top - 100;
+            $('html,body').animate({
+            'scrollTop':position
+            }, 1500)
+        }
     });
 
     var topBtn = $('#top-btn');
@@ -43,4 +52,7 @@ $(function(){
 
 $(document).ready(function() {
     $('.drawer').drawer();
+    $('.drawer-menu li').on('click', function() {
+        $('.drawer').drawer('close');
+    });
 });
