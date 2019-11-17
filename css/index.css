@@ -17,21 +17,21 @@ body {
 
 .main {
   display: block;
-  height: 100px;
+  height: 80px;
   width: 100%;
   background-color: white;
 }
 
 .main img {
-  width: 120px;
-  height: 100px;
-  margin-left: 4%;
+  width: 96px;
+  height: 80px;
+  margin-left: 5%;
   float: left;
 }
 
 .main #scroll {
   float: right;
-  line-height: 100px;
+  line-height: 80px;
   margin-right: 10%;
 }
 
@@ -43,7 +43,7 @@ body {
 
 .responsive {
   display: none;
-  height: 100px;
+  height: 60px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -52,8 +52,8 @@ body {
 }
 
 .responsive img {
-  width: 120px;
-  height: 100px;
+  width: 72px;
+  height: 60px;
   display: block;
   margin: 0 auto;
 }
@@ -201,8 +201,8 @@ body {
 }
 
 footer img {
-  width: 120px;
-  height: 100px;
+  width: 96px;
+  height: 80px;
   float: right;
   margin-right: 2%;
 }
@@ -215,7 +215,7 @@ footer img {
     display: block;
   }
   .slider {
-    margin-top: 100px;
+    margin-top: 60px;
   }
   .greeting .greeting-message {
     width: 100%;

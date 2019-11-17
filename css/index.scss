@@ -1,6 +1,6 @@
 $main-color: rgb(0, 210, 255);
-$img-width: 120px;
-$img-height: 100px; 
+$img-width: 96px;
+$img-height: 80px; 
 
 *{
     margin: 0;
@@ -20,18 +20,18 @@ body {
 
 .main{
     display: block;
-    height: 100px;
+    height: 80px;
     width: 100%;
     background-color:white ;
     img{
         width: $img-width;
         height: $img-height;
-        margin-left: 4%;
+        margin-left: 5%;
         float: left;
     }
     #scroll{
         float: right;
-        line-height: 100px;
+        line-height: 80px;
         margin-right: 10%;
         ul{
             li{
@@ -45,15 +45,15 @@ body {
 
 .responsive{
     display: none;
-    height: 100px;
+    height: 60px;
     width: 100%;
     position: fixed;
 	top: 0;
     z-index: 10;
     background-color:white ;
     img{
-        width: $img-width;
-        height: $img-height;
+        width: $img-width - 24px;
+        height: $img-height - 20px;
         display: block;
         margin: 0 auto;
     }
@@ -205,7 +205,7 @@ footer{
     }
 
     .slider{
-        margin-top: 100px;
+        margin-top: 60px;
     }
 
     .greeting{
